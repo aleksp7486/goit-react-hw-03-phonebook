@@ -27,29 +27,23 @@ export const ContactForm = ({ onFormSubmit }) => {
       validationSchema={schema}
       onSubmit={onFormSubmit}
     >
-      <Form>
-        <Label htmlFor="name">
-          Name: <Error name="name" component="p" />
+      <Form noValidate>
+        <Label>
+          Name:
+          <Input type="text" name="name" placeholder="Введите имя" required />
+          <Error name="name" component="p" />
         </Label>
-        <Input
-          type="text"
-          name="name"
-          placeholder="Введите имя"
-          id="name"
-          required
-        />
 
-        <Label htmlFor="tel">
-          Number: <Error name="number" component="p" />
+        <Label>
+          Number:
+          <Input
+            type="tel"
+            name="number"
+            placeholder="Введите номер телефона"
+            required
+          />
+          <Error name="number" component="p" />
         </Label>
-        <Input
-          type="tel"
-          name="number"
-          placeholder="Введите номер телефона"
-          id="tel"
-          required
-        />
-
         <Btn type="submit">
           <span>
             <BsFillPersonPlusFill />

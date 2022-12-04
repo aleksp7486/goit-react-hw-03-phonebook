@@ -2,22 +2,20 @@ import styled from 'styled-components';
 import { Field, ErrorMessage } from 'formik';
 
 export const Label = styled.label`
-  display: flex;
-  justify-content: space-between;
-  font-size: ${p => p.theme.fontSizes.m};
-  margin-bottom: ${p => p.theme.space[2]}px;
+  display: block;
+  font-size: ${p => p.theme.fontSizes.s};
+  margin-bottom: ${p => p.theme.space[4]}px;
 `;
 
 export const Input = styled(Field)`
   display: block;
   width: 100%;
-
-  margin-bottom: ${p => p.theme.space[3]}px;
 `;
 
 export const Error = styled(ErrorMessage)`
-  font-size: 14px;
+  font-size: ${p => p.theme.fontSizes.s};
   color: red;
+  padding-left: ${p => p.theme.space[2]}px;
 `;
 
 export const Btn = styled.button`

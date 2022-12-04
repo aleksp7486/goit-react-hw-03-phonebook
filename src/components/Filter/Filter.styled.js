@@ -4,8 +4,7 @@ export const Board = styled.div`
 `;
 export const Label = styled.label`
   display: block;
-  margin-bottom: ${p => p.theme.space[2]}px;
-  font-size: ${p => p.theme.fontSizes.m};
+  font-size: ${p => p.theme.fontSizes.s};
 `;
 
 export const Input = styled.input`
